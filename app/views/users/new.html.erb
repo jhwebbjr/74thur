@@ -1,0 +1,13 @@
+<!-- <h1>Welcome to youTwit</h1>
+<p>Where youTwits Twit Away!</p>
+<p>To create a new account, sign up below!</p> -->
+<%= form_for @user do |f| %>
+
+  <%= f.text_field :email, placeholder: "email" %>
+  <%= f.text_field :username, placeholder: "username" %>
+  <%= f.text_field :name, placeholder: "name" %>
+  <%= f.password_field :password, placeholder: "password" %>
+  <%= f.password_field :password_confirmation, placeholder: "password" %>
+  <%= f.submit "Create Account" %>
+
+<% end %>
